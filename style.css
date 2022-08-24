@@ -1,0 +1,181 @@
+:root {
+  --main-background: rgba(245, 245, 245, 0.892);
+  --dark-grey: rgb(40, 40, 40);
+ }
+
+ a {
+  text-decoration: none;
+  color: var(--dark-grey);
+ }
+
+*, *::before, *::after {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  background-color: var(--main-background);
+}
+
+header * {
+  color: var(--dark-grey);
+
+}
+
+header {
+  padding: 20px 12px;
+}
+
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.com_pages, .user-infos-elements {
+  display: flex;
+  padding: 0;
+}
+
+
+.com_pages li, .user-infos-elements li {
+  display: block;
+  padding: 0;
+}
+
+.com_pages a, .user-infos-elements a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.connexion-status {
+  display: flex;
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  position: absolute;
+  z-index: 2;
+  width: 16vw;
+  height: 200px;
+  right: 5%;
+  padding: 0 10px;
+  box-shadow: 1px 1px 1px 1px rgba(189, 189, 189, 0.424);
+}
+
+#connexion:hover + .connexion-status, .connexion-status:hover {
+  visibility: visible;
+}
+
+.connexion-status button {
+  display: block;
+  width: 100%;
+  height: 30%;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+}
+
+.connexion-status a {
+  padding: 2px;
+}
+
+.connexion-status a:hover {
+  text-decoration: underline;
+}
+
+.connexion-status * {
+  display: block;
+  padding-bottom: 5px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  text-align: center;
+  color: crimson;
+  font-style: italic;
+  margin: 20px;
+}
+
+.searching {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.searching h2 {
+  padding: 0 10px;
+  font-size: 17px;
+}
+
+#search-bar {
+  position: relative;
+  display: block;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  padding: 10px;
+  bottom: 4vh;
+  left: 85vw;
+}
+
+
+
+#search-bar::placeholder {
+  color: var(--dark-grey);
+}
+
+main {
+  display: grid;
+  margin: 0 22vw;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  justify-items: stretch;
+}
+
+main * {
+  margin: 0.8vh 0;
+  
+}
+
+.att-seeker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 800px;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background-color: crimson;
+}
+
+.payment-delivery {
+  display: flex;
+  justify-content: space-around;
+}
+
+.payment-delivery a {
+  display: block;
+}
+
+
+.att-seeker span {
+  display: block;
+  color: white;
+  background-color: transparent;
+  font-size: 30px;
+  text-align: center;
+  margin: 15px;
+}
+
+.att-seeker strong {
+  font-size: 80px;
+  background-color: transparent;
+}
+
